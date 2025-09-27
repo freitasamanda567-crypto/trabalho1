@@ -1,0 +1,133 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-size: 2.3rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+h2 {
+  color: #2980b9;
+  margin: 25px 0 15px;
+  font-size: 1.6rem;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #3498db;
+}
+img {
+  display: block;
+  margin: 0 auto 25px;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #3498db;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+nav {
+  text-align: center;
+  margin: 15px 0 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2980b9;
+  font-weight: 600;
+  margin: 0 12px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: #eaf5ff;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #2980b9;
+  color: white;
+}
+ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+section h2 {
+  margin-top: 30px;
+}
+
+p {
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+#mmfeet {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin-top: 20px;
+  border-left: 4px solid #3498db;
+}
+
+#mmfeet h2 {
+  border: none;
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+#mmfeet p {
+  margin: 10px 0 6px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#mmfeet a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: normal;
+  display: inline-block;
+}
+
+#mmfeet a:hover {
+  text-decoration: underline;
+}
+footer + p {
+  text-align: center;
+  margin-top: 25px;
+  color: #7f8c8d;
+  font-size: 0.95rem;
+}
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  img {
+    width: 130px;
+    height: 130px;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px auto;
+    width: fit-content;
+  }
+
+  ul {
+    margin-left: 15px;
+  }
+}

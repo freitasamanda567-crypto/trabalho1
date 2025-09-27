@@ -1,0 +1,136 @@
+<<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - Amanda Freitas de Lima</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 8px;
+        }
+
+        input, select, textarea {
+            width: calc(100% - 160px);
+            padding: 6px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #gobackbutton2 {
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body id="contactnewbody">
+    <a id="gobackbutton2" href="index.html">‹ Voltar</a>
+    <h1 id="title_contacts">Contatos</h1>
+
+    <form method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nameinput">Nome:</label>
+            <input id="nameinput" type="text" name="Nome" required><br>
+            <label for="emailinput">E-mail:</label>
+            <input id="emailinput" type="email" name="E-mail" placeholder="nome@dominio" required><br>
+            <label for="ageinput">Idade:</label>
+            <input id="ageinput" type="number" required><br>
+            <label for="phoneinput">Telefone:</label>
+            <input id="phoneinput" type="tel" required><br>
+            <label for="birthinput">Data de Nascimento:</label>
+            <input id="birthinput" type="date"><br>
+            <label for="genderinput">Gênero:</label>
+            <input id="genderinput" type="text"><br>
+            <label for="maritalinput">Estado Civil:</label>
+            <input id="maritalinput" type="text">
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Empresariais</legend>
+            <label for="cnpjinput">CNPJ:</label>
+            <input id="cnpjinput" type="text"><br>
+            <label for="razinput">Razão Social:</label>
+            <input id="razinput" type="text"><br>
+            <label for="raminput">Ramo de Atuação:</label>
+            <input id="raminput" type="text">
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço Empresarial</legend>
+            <label for="cepinput">CEP:</label>
+            <input id="cepinput" type="text" required><br>
+            <label for="typelaginput">Tipo de Logradouro:</label>
+            <select required>
+                <option value="rua">Rua</option>
+                <option value="avenida">Avenida</option>
+                <option value="praca">Praça</option>
+                <option value="outro">Outro</option>
+            </select><br>
+            <label for="laginput">Logradouro:</label>
+            <input id="laginput" type="text" required><br>
+            <label for="cityinput">Cidade:</label>
+            <input id="cityinput" type="text" required><br>
+            <label for="stateinput">Estado:</label>
+            <input id="stateinput" type="text" required>
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
